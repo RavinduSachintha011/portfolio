@@ -1,0 +1,177 @@
+.timeline-div {
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    padding-bottom: 20px;
+}
+.my-journey{
+    text-align: center;
+}
+
+.my-journey h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.straight-line-1,
+.straight-line-2,
+.straight-line-3 {
+    position: absolute;
+    width: 1px;
+    height: 170px;
+    background-color: blueviolet;
+    left: 51.6%;
+}
+
+.straight-line-1 {
+    top: 182px;
+}
+
+.straight-line-2 {
+    top: 400px;
+}
+.straight-line-3 {
+    top: 620px;
+}
+
+.round1,
+.round2,
+.round3,
+.round4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid blueviolet;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blueviolet;
+}
+
+.round1,
+.round2,
+.round3,
+.round4 {
+   animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+.time-line {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    left: 50%;
+}
+
+
+.line1,
+.line2,
+.line3,
+.line4 {
+    width: 150px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    background: linear-gradient(to right, blueviolet, transparent);
+}
+
+.line1 {
+    top: 156px;
+    left: 611px;
+    background: linear-gradient(to left, blueviolet, transparent);
+}
+
+.line2 {
+    top: 375px;
+    left: 810px;
+}
+
+.line3 {
+    top: 594px;
+    left: 611px;
+    background: linear-gradient(to left, blueviolet, transparent);
+}
+
+.line4 {
+    top: 812px;
+    left: 810px;
+}
+
+.milestone-item-1,
+.milestone-item-2,
+.milestone-item-3,
+.milestone-item-4 {
+    position: relative;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    transition: transform 0.3s;
+    width: 300px;
+    border: 1px solid blueviolet;
+}
+
+.milestone-item-1:hover,
+.milestone-item-2:hover,
+.milestone-item-3:hover,
+.milestone-item-4:hover {
+    transform: translateY(-4px);
+}
+
+.milestone-item-1 h4,
+.milestone-item-2 h4,
+.milestone-item-3 h4,
+.milestone-item-4 h4 {
+    margin: 0 0 8px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #B13BFF, #3b286e);
+    /* Gradient colors */
+    -webkit-background-clip: text;
+    /* Clips background to text shape */
+    -webkit-text-fill-color: transparent;
+}
+
+.milestone-item-1 p,
+.milestone-item-2 p,
+.milestone-item-3 p,
+.milestone-item-4 p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.milestone-item-1{
+    left: 320px;
+    top: 38px;
+}
+
+.milestone-item-2{
+    left: 950px;
+    top: 110px;
+}
+
+.milestone-item-3{
+    left: 320px;
+    top: 168px;
+}
+
+.milestone-item-4{
+    left: 950px;
+    top: 205px;
+}
